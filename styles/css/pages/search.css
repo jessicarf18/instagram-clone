@@ -79,4 +79,28 @@ header .search .live {
   padding-left: 10px;
 }
 
+nav {
+  background-color: #FAFAFA;
+  overflow-x: auto;
+  position: sticky;
+  top: 0;
+  padding: 9px 0 0 8px;
+  display: flex;
+}
+nav .section {
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  border-radius: 6px;
+  margin: 0 6px 7px 0;
+  padding: 8px 11px;
+  height: 32px;
+}
+nav .section img:nth-child(1), nav .section img:nth-child(2) {
+  margin-right: 6px;
+}
+
 /*# sourceMappingURL=search.css.map */
