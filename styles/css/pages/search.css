@@ -103,4 +103,13 @@ nav .section img:nth-child(1), nav .section img:nth-child(2) {
   margin-right: 6px;
 }
 
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+}
+.posts img {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=search.css.map */
