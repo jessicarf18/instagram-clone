@@ -3,9 +3,12 @@
 @import "./mixins.scss";
 @import "./extends.scss";
 
-*,
-p {
+
+
+
+*,p {
   font-family: Arial;
+  font-size: 14px;
 }
 
 body {
