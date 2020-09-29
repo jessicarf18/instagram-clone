@@ -45,19 +45,22 @@ body {
 }
 
 header {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 header .search {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   padding: 0 10px 0 8px;
 }
 header .search .search-field {
   background: #EAEAEB;
   border-radius: 10px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   padding-left: 10px;
   width: 327px;
 }
@@ -80,19 +83,24 @@ header .search .live {
 }
 
 nav {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   overflow-x: auto;
   position: sticky;
   top: 0;
   padding: 9px 0 0 8px;
   display: flex;
+  justify-content: flex-start flex-start;
+  align-items: row;
+  flex-direction: row;
 }
 nav .section {
   background-color: #fff;
   cursor: pointer;
   font-weight: 600;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   border: 1px solid rgba(60, 60, 67, 0.18);
   border-radius: 6px;
   margin: 0 6px 7px 0;

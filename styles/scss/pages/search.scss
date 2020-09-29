@@ -1,17 +1,14 @@
 @import "../styles.scss";
 header{
-    background-color: #FAFAFA;
+    background-color: $background-primary;
     .search{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include simple-flex(space-between, center, row);
         padding: 0 10px 0 8px;
 
         .search-field{
-            background: #EAEAEB;
+            background: $background-search-field;
             border-radius: 10px;
-            display: flex;
-            align-items: center;
+            @include simple-flex(flex-start, center, row);
             padding-left:10px;
             width: 327px;
 
@@ -21,7 +18,7 @@ header{
 
             #input{
                 border: none;
-                background: #EAEAEB;
+                background: $background-search-field;
                 margin-left:12.75px;
                 height: 36px;
                 width: 90%;
@@ -39,19 +36,18 @@ header{
 }
 
 nav{
-    background-color: #FAFAFA;
+    background-color: $background-primary;
     overflow-x: auto;
     position: sticky;
     top:0;
     padding: 9px 0 0 8px;
-    display: flex;
+    @include simple-flex(flex-start flex-start,row);
 
     .section{
         background-color: #fff;
         cursor: pointer;
         font-weight: 600;
-        display: flex;
-        align-items: center;
+        @include simple-flex(flex-start, center, row);
         border: 1px solid rgba(60, 60, 67, 0.18);
         border-radius: 6px;
         margin: 0 6px 7px 0;
