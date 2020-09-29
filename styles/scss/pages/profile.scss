@@ -154,6 +154,7 @@ header{
             img{
                 @include box-round(56px);
                 margin-bottom:4px;
+                cursor: pointer;
             }
         }
         
