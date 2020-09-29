@@ -139,11 +139,18 @@ header nav ul li a img {
   align-items: center;
   flex-direction: row;
 }
-.profile-infos .info img {
-  border: 3px solid rgba(0, 0, 0, 0.1);
-  width: 86px;
-  height: 86px;
+.profile-infos .info .image-border {
+  background: linear-gradient(215deg, #c7c7cc, #c7c7cc, #c7c7cc);
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+.profile-infos .info .image-border img {
+  border-radius: 50%;
+  border: 1.5px solid #fff;
 }
 .profile-infos .info .statistics {
   display: flex;

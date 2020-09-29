@@ -86,9 +86,19 @@ header{
     padding: 0 28px 0 16px;
     .info{
         @include simple-flex(flex-start,center, row);
-        img{
-            border: 3px solid rgba(0,0,0,.10);
-            @include box-round(86px);
+        .image-border{
+            background: linear-gradient(215deg, #c7c7cc, #c7c7cc, #c7c7cc);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+
+            img{
+                border-radius: 50%;
+                border: 1.5px solid #fff;
+            }
         }
         .statistics{
             @include simple-flex(flex-start,flex-start, row);
