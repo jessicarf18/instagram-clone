@@ -147,11 +147,12 @@ header{
 
 .profile-highlights{
     .content{
-        @include simple-flex(center,center,row);
+        @include simple-flex(flex-start,flex-start,row);
         width: 100%;
         max-width: 90vw;
         overflow-x: auto;
         margin-top:16px;
+        padding-left: 15px;
 
         .highlights-item{
             @include simple-flex(center,center, column);
@@ -169,4 +170,32 @@ header{
         }
         
     }
+}
+main{
+
+    .feed-options{
+        display: flex;
+        
+        .grid-area{
+            border-bottom: 1px solid $text-color;
+        }
+        .grid-area,
+        .tags-area
+        {
+            height: 44px;
+            width: 186px;
+            text-align: center;
+        }
+    }
+
+    .feed-posts{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1px;
+        img{
+            width: 124px;
+            height: 125px;
+        }
+    }
+
 }
