@@ -54,6 +54,10 @@ header {
   align-items: flex-start;
   flex-direction: row;
   padding: 0px 0 11px 11px;
+  position: sticky;
+  top: 0;
+  background: #fafafa;
+  height: 50px;
 }
 header .profile-user {
   display: flex;
@@ -145,14 +149,17 @@ header nav ul li a img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 93px;
+  height: 93px;
 }
 .profile-infos .info .image-border img {
+  width: 86px;
+  height: 86px;
   border-radius: 50%;
   border: 1.5px solid #fff;
 }
 .profile-infos .info .statistics {
+  margin-left: 32px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -163,7 +170,7 @@ header nav ul li a img {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin-left: 28px;
+  margin-right: 28px;
 }
 .profile-infos .info .statistics .statistics-card span {
   font-weight: 600;
@@ -208,7 +215,6 @@ header nav ul li a img {
   align-items: flex-start;
   flex-direction: row;
   width: 100%;
-  max-width: 90vw;
   overflow-x: auto;
   margin-top: 16px;
   padding-left: 15px;
@@ -219,10 +225,20 @@ header nav ul li a img {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 11px;
+  padding: 11px 11px 0 11px;
 }
 .profile-highlights .content .highlights-item:first-child {
   padding-left: 0px;
+}
+.profile-highlights .content .highlights-item .img-container {
+  border-radius: 50%;
+  background: #fff;
+  height: 56px;
+  width: 56px;
+  margin-bottom: 4px;
+}
+.profile-highlights .content .highlights-item .img-container img {
+  transform: scale(0.3);
 }
 .profile-highlights .content .highlights-item img {
   width: 56px;
@@ -234,9 +250,12 @@ header nav ul li a img {
 
 main .feed-options {
   display: flex;
+  border-top: 0.5px solid #c3c3c5;
+  padding-top: 12px;
 }
 main .feed-options .grid-area {
   border-bottom: 1px solid #262626;
+  margin-bottom: 0.5px;
 }
 main .feed-options .grid-area,
 main .feed-options .tags-area {

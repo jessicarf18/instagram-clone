@@ -7,6 +7,12 @@ header{
     @include simple-flex(center, flex-start, row);
     padding:0px 0 11px 11px;
 
+    position: sticky;
+    top: 0;
+    background: #fafafa;
+    height: 50px;
+
+    
     .profile-user{
         @include simple-flex(flex-start,center, row );
         padding-top:15px;
@@ -79,6 +85,7 @@ header{
 
         }
     }
+    
 }
 
 .profile-infos{
@@ -92,19 +99,20 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 60px;
-            height: 60px;
+            width: 93px;
+            height: 93px;
 
             img{
-                border-radius: 50%;
+                @include box-round(86px);
                 border: 1.5px solid #fff;
             }
         }
         .statistics{
+            margin-left: 32px;
             @include simple-flex(flex-start,flex-start, row);
             .statistics-card{
                 @include simple-flex(flex-start,center, column);
-                margin-left: 28px;
+                margin-right: 28px;
 
                 span{
                     font-weight: 600;
@@ -149,7 +157,6 @@ header{
     .content{
         @include simple-flex(flex-start,flex-start,row);
         width: 100%;
-        max-width: 90vw;
         overflow-x: auto;
         margin-top:16px;
         padding-left: 15px;
@@ -157,11 +164,24 @@ header{
         .highlights-item{
             @include simple-flex(center,center, column);
             text-align: center;
-            padding:11px;
+            padding:11px 11px 0 11px;
 
             &:first-child{
                 padding-left:0px;
             }
+
+            .img-container{
+                border-radius: 50%;
+                background: #fff;
+                height: 56px;
+                width: 56px;
+                margin-bottom:4px;
+
+                img{
+                    transform: scale(0.3);
+                }
+            }
+
             img{
                 @include box-round(56px);
                 margin-bottom:4px;
@@ -175,9 +195,12 @@ main{
 
     .feed-options{
         display: flex;
+        border-top:0.5px solid #c3c3c5;
+        padding-top: 12px;
         
         .grid-area{
             border-bottom: 1px solid $text-color;
+            margin-bottom:0.5px;
         }
         .grid-area,
         .tags-area
