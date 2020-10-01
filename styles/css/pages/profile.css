@@ -54,6 +54,7 @@ header {
   align-items: flex-start;
   flex-direction: row;
   padding: 0px 0 11px 11px;
+  z-index: 999;
   position: sticky;
   top: 0;
   background: #fafafa;
