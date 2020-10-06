@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  max-width: 375px;
   margin: auto;
   background-color: #fafafa;
 }
@@ -57,11 +56,49 @@ header {
   border-bottom: 1px solid #e2e2e2;
   z-index: 1;
 }
+@media (min-width: 768px) {
+  header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 header .logo-img {
   width: 105px;
   height: auto;
 }
+header .search-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  padding: 5px 80px;
+}
+@media (min-width: 768px) {
+  header .search-container {
+    display: flex;
+  }
+}
+header .search-container .search-icon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+header .search-container .search-input {
+  width: 70px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+@media (min-width: 768px) {
+  header .camera-icon {
+    display: none;
+  }
+}
+
 main {
+  max-width: 614px;
+  margin: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;

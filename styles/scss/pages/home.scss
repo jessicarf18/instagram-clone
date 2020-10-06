@@ -10,6 +10,11 @@ header {
   border-bottom: 1px solid #e2e2e2;
   z-index: 1;
 
+  @media (min-width: 768px){
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
   .logo-img {
     width: 105px;
     height: auto;
@@ -18,9 +23,44 @@ header {
   .action-icon {
     @extend %action-icons;
   }
+
+  .search-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+    border: solid 1px #dbdbdb;
+    padding: 5px 80px;
+
+    @media(min-width: 768px){
+      display: flex;
+    }
+
+    .search-icon{
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+    }
+
+    .search-input{
+      width: 70px;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  @media (min-width: 768px){
+    .camera-icon {
+        display: none;
+    }
+  }
+
 }
 
 main {
+  max-width: 614px;
+  margin:auto;
   @include simple-flex(flex-start, center, column);
 
   .stories-container {
