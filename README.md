@@ -15,6 +15,6 @@
   <li>CSS </li>
 </ul>
 
-<h2> :construction_worker: Status: </h2> In progress
+<p> :construction_worker: <h3>Status: </h3>In progress </p>
 
 <p>Made with ♥ by Jéssica Rosália :wave: <a href="https://www.linkedin.com/in/j%C3%A9ssica-ros%C3%A1lia-fernandes-310899133/" target=_blank"> Get in touch! </a> </p>
