@@ -17,7 +17,7 @@ html {
 
 body {
   margin: auto;
-  max-width: 375px;
+  max-width: 470px;
   margin: 0 auto;
   background-color: #fafafa;
 }
@@ -43,6 +43,11 @@ body {
 }
 .tab-bar .action-icon {
   width: 22px;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 375px;
 }
 
 .login-container {

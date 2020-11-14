@@ -1,5 +1,9 @@
 @import "../styles.scss";
 
+body{
+  margin:0 auto;
+  max-width: 375px;
+}
 .login-container {
   @include simple-flex(center, center, column);
   height: 100%;
