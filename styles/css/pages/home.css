@@ -17,7 +17,7 @@ html {
 
 body {
   margin: auto;
-  max-width: 470px;
+  max-width: 375px;
   margin: 0 auto;
   background-color: #fafafa;
 }
@@ -75,11 +75,6 @@ header .search-container {
   background: #fafafa;
   border: solid 1px #dbdbdb;
   padding: 5px 80px;
-}
-@media (min-width: 768px) {
-  header .search-container {
-    display: flex;
-  }
 }
 header .search-container .search-icon {
   width: 10px;
